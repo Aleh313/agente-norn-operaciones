@@ -1,23 +1,31 @@
-# 📋 Agente 02: Norn Greyrat
-
-**Rol Principal:** Secretaria Ejecutiva, Gestora de Tareas, Calendario & Auditoría Inflexible.  
-**Ubicación:** `agentes/02_norn_agenda/`  
-**Estado:** Activo 24/7 en Servidor Central.
+# 🤖 Micro-Agente Autónomo: Norn Greyrat
+**Rol Oficial:** Secretaria Ejecutiva, Gestión de Agenda, Taller & Operaciones  
+**Repositorio Independiente:** `Aleh313/agente-norn-agenda`  
+**Ecosistema:** Electronicat (Catamarca, Argentina)
 
 ---
 
 ## 🎯 1. Propósito y Misión Operativa
+Organiza el calendario, asigna turnos de trabajo a Ale y Lucas, y coordina logística de banco y campo.
 
-Norn se encarga de la disciplina operativa y de que no se olvide ningún compromiso:
-1. Administrar el calendario de visitas técnicas a clubes de Catamarca y tareas en banco de trabajo.
-2. Alertar con insistencia sobre los vencimientos próximos (Luz y pasivos de taller).
-3. Exigir comprobantes y evidencias cuando Ale o Lucas marcan una tarea como completada para habilitar su auditoría en el panel de Administrador.
+Este repositorio es un **microsistema 100% independiente**. Puede clonarse, modificarse y desplegarse de manera aislada sin depender del servidor central monolítico.
 
 ---
 
-## 🤖 2. Directivas para Agentes de IA que Modifiquen este Agente
+## ⚙️ 2. Arquitectura de Archivos y Funcionamiento
+Para que cualquier modelo de IA o desarrollador trabaje en esta carpeta:
 
-- **Lectura Previa Obligatoria:** Revisar [`PROMPT_ENTRENAMIENTO.md`](./PROMPT_ENTRENAMIENTO.md) para respetar el tono formal, estricto y ordenado de Norn.
-- **Memoria Persistente:** Registrar tareas pendientes y resueltas en [`memoria/MEMORIA_ACTIVIDAD.md`](./memoria/MEMORIA_ACTIVIDAD.md).
-- **Integración con el Servidor:** Norn escucha eventos de tareas en `agente.js` y envía notificaciones WebSocket al Administrador y a las apps móviles.
-- **Verificación:** Probar que los recordatorios no dupliquen notificaciones antes de solicitar la verificación en la PC de Ale.
+- **`db.json`**: Base de datos local y persistente exclusiva de este agente. Almacena en `db.json` los trabajos pendientes (`jobs`), mensajes de clientes y clientes registrados.
+- **`agente.js`**: Lógica de inicialización autónoma, bucle de ejecución y conexión al bus de eventos.
+- **`PROMPT_ENTRENAMIENTO.md`**: Cerebro del agente, bibliografía técnica inyectada y reglas operativas inquebrantables.
+- **`SKILLS.md`**: Capacidades y herramientas específicas asignadas a su rol.
+- **`config.json`**: Metadatos de configuración, sector asignado y pares de comunicación.
+- **`memoria/MEMORIA_ACTIVIDAD.md`**: Registro inmutable de contexto histórico y última mejora implementada.
+
+---
+
+## 🛡️ 3. Reglas de Oro para IAs y Desarrolladores que Modifiquen este Agente
+1. **No mezclar bases de datos:** Este agente solo debe leer y escribir en su propio `db.json` local. Nunca intentes acceder directamente a bases de otros agentes; toda interacción entre agentes se realiza mediante eventos en el bus.
+2. **Respetar la personalidad y rol:** Consulta siempre `PROMPT_ENTRENAMIENTO.md` antes de generar código o respuestas.
+3. **Persistir cada mejora:** Cada vez que resuelvas un bug, agregues una regla o actualices datos, debes registrar la entrada con fecha en `memoria/MEMORIA_ACTIVIDAD.md`.
+4. **Commits atómicos y claros:** Al hacer push a este repositorio, escribe mensajes descriptivos del cambio realizado en el micro-agente.
