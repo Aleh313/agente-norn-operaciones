@@ -1,0 +1,11 @@
+{
+  "name": "agente-norn-operaciones",
+  "version": "1.0.0",
+  "description": "Micro-agente Norn Greyrat: Gestión de Agenda, Trabajos de Taller y Turnos de Campo",
+  "main": "agente.js",
+  "scripts": {
+    "start": "node agente.js"
+  },
+  "author": "Ale & Lucas - Electronicat",
+  "license": "ISC"
+}

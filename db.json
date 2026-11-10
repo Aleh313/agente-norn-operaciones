@@ -1,0 +1,219 @@
+{
+  "_agent": "02_norn_agenda",
+  "createdAt": "2026-11-10T19:46:33.370Z",
+  "systemInfo": {
+    "owner": "Ale & Lucas",
+    "company": "Electronicat"
+  },
+  "jobs": [
+    {
+      "id": "job_molmatre_1",
+      "clientName": "Montmartre (Molmatre)",
+      "title": "Terminar Tanteador y Entregar Tanteador + Tablero 24s (Destraba $750.000)",
+      "category": "Tablero Electrónico",
+      "dateISO": "2026-10-28",
+      "timeBlock": "☀️ Mañana (Taller)",
+      "dayPlanned": "Mié 28/10 — ☀️ Mañana (Taller)",
+      "priority": "Crítica",
+      "responsible": "Ale + Lucas",
+      "price": 750000,
+      "status": "completado"
+    },
+    {
+      "id": "job_1793136886608",
+      "clientName": "Citi Pádel Club",
+      "title": "Mantenimiento eléctrico: Cambio de reflector",
+      "category": "Campo / Electricidad",
+      "dateISO": "2026-10-28",
+      "timeBlock": "🌤️ Tarde (Campo)",
+      "dayPlanned": "Mié 28/10 — 🌤️ Tarde (Campo)",
+      "priority": "Alta",
+      "responsible": "Pareja (Ale + Lucas)",
+      "price": 50000,
+      "status": "completado"
+    },
+    {
+      "id": "job_defensores_1",
+      "clientName": "Defensores del Norte (Vóley)",
+      "title": "Instalar última cámara de seguridad faltante (Trabajo ya cobrado - Cerrar pendiente)",
+      "category": "Campo / Electricidad",
+      "dateISO": "2026-10-29",
+      "timeBlock": "🌤️ Tarde (Campo)",
+      "dayPlanned": "Jue 29/10 — 🌤️ Tarde (Salida Rápida)",
+      "priority": "Alta",
+      "responsible": "Pareja (Ale + Lucas)",
+      "price": 0,
+      "status": "pendiente"
+    },
+    {
+      "id": "job_juventud_1",
+      "clientName": "Deportivo Juventud",
+      "title": "Desarrollo Sistema de Control de Matrícula",
+      "category": "Diseño Software",
+      "dateISO": "2026-10-30",
+      "timeBlock": "☀️ Mañana (Programación)",
+      "dayPlanned": "Vie 30/10 — ☀️ Mañana",
+      "priority": "Media",
+      "responsible": "Lucas",
+      "price": 0,
+      "status": "pendiente"
+    },
+    {
+      "id": "job_redstar_1",
+      "clientName": "Red Star (Básquet)",
+      "title": "Desarrollo e instalación Sistema de Ingreso",
+      "category": "Diseño Software",
+      "dateISO": "2026-11-02",
+      "timeBlock": "☀️ Mañana (Taller/Dev)",
+      "dayPlanned": "Lun 02/11 — ☀️ Mañana",
+      "priority": "Media",
+      "responsible": "Lucas + Ale",
+      "price": 0,
+      "status": "pendiente"
+    },
+    {
+      "id": "job_facundo_villagra",
+      "clientName": "Facundo Villagra",
+      "title": "Instalar ventilador (Trabajo de Campo programado)",
+      "category": "Campo / Electricidad",
+      "dateISO": "2026-11-05",
+      "timeBlock": "🌤️ Tarde (Campo)",
+      "dayPlanned": "Jue 05/11 — 🌤️ Tarde (Campo)",
+      "priority": "Alta",
+      "responsible": "Pareja (Ale + Lucas)",
+      "price": 0,
+      "status": "pendiente"
+    },
+    {
+      "id": "job_lanzamiento_24s",
+      "clientName": "Campaña Electronicat",
+      "title": "Producción y Venta de 10 Tableros de 24s (Precio Lanzamiento)",
+      "category": "Diseño Electrónico",
+      "dateISO": "2026-11-06",
+      "timeBlock": "☀️ Mañana (Serie en Taller)",
+      "dayPlanned": "Vie 06/11 — 🚀 Serie en Taller",
+      "priority": "Estratégica",
+      "responsible": "Ale + Lucas",
+      "price": 0,
+      "status": "pendiente"
+    },
+    {
+      "id": "job_diario_ancasti_ventiladores",
+      "clientName": "Diario El Ancasti",
+      "title": "Reparar 2 ventiladores de pie (Presupuesto  - Adelanto  cobrado)",
+      "category": "Taller / Laboratorio",
+      "dateISO": "2026-10-29",
+      "timeBlock": "☀️ Mañana (Taller)",
+      "dayPlanned": "Jue 29/10 — ☀️ Mañana (Taller)",
+      "priority": "Alta",
+      "responsible": "Ale + Lucas",
+      "price": 90000,
+      "advancePaid": 30000,
+      "remainingBalance": 60000,
+      "status": "en_curso",
+      "expenseRepuestos": 24000,
+      "notes": "Comprados rodamientos para 2 ventiladores (.000)."
+    }
+  ],
+  "workMessages": [
+    {
+      "id": "wmsg_demo_1",
+      "senderName": "Montmartre Básquet (Presidente)",
+      "phone": "5493834112233",
+      "text": "Hola Ale, te consulto cuánto nos sale terminar e instalar el tablero de 24 segundos esta semana?",
+      "category": "Clubes / Tableros 24s",
+      "categoryKey": "club",
+      "urgency": "Alta",
+      "summary": "Consulta por finalización e instalación de tablero de 24 segundos",
+      "time": "18:15",
+      "timestamp": "2026-11-08T04:26:34.560Z",
+      "status": "pendiente"
+    }
+  ],
+  "clients": [
+    {
+      "id": "cl_defensores",
+      "name": "Defensores del Norte (Vóley)",
+      "type": "Club de Vóley (Catamarca)",
+      "services": [
+        "Cámaras de Seguridad",
+        "Mantenimiento Eléctrico"
+      ],
+      "pendingTasks": 1,
+      "pendingBalance": 0,
+      "notes": "Trabajo ya cobrado. Falta instalar 1 cámara para cerrar compromiso."
+    },
+    {
+      "id": "cl_juventud",
+      "name": "Deportivo Juventud (Básquet y Vóley)",
+      "type": "Club Deportivo (Catamarca)",
+      "services": [
+        "Sistema Control de Matrícula",
+        "Mantenimiento Eléctrico"
+      ],
+      "pendingTasks": 1,
+      "pendingBalance": 0,
+      "notes": "Trabajo entregado y .000 cobrados. En desarrollo: Sistema de Control de Matrícula."
+    },
+    {
+      "id": "cl_redstar",
+      "name": "Red Star (Básquet)",
+      "type": "Club de Básquet (Catamarca)",
+      "services": [
+        "Sistema de Ingreso",
+        "Tableros Electrónicos"
+      ],
+      "pendingTasks": 1,
+      "pendingBalance": 0,
+      "notes": "Desarrollar e implementar Sistema de Ingreso."
+    },
+    {
+      "id": "cl_ateneo",
+      "name": "Ateneo Mariano Moreno (Vóley)",
+      "type": "Club de Vóley (Catamarca)",
+      "services": [
+        "Mantenimiento Eléctrico",
+        "Tableros Electrónicos"
+      ],
+      "pendingTasks": 0,
+      "pendingBalance": 0,
+      "notes": "Cliente activo de mantenimiento."
+    },
+    {
+      "id": "cl_montmartre",
+      "name": "Montmartre / Molmatre (Básquet)",
+      "type": "Club de Básquet (Catamarca)",
+      "services": [
+        "Tanteador Principal",
+        "Tablero 24s"
+      ],
+      "pendingTasks": 1,
+      "pendingBalance": 750000,
+      "notes": "¡PRIORIDAD #1 DE CAJA! Terminar tanteador y entregar Tanteador + Tablero 24s libera $750.000."
+    },
+    {
+      "id": "cl_citi_padel",
+      "name": "Citi Pádel Club (Catamarca)",
+      "type": "Club Deportivo / Pádel",
+      "services": [
+        "Mantenimiento Eléctrico",
+        "Iluminación Reflectores"
+      ],
+      "pendingTasks": 0,
+      "pendingBalance": 0,
+      "notes": "Cambio de reflector finalizado y cobrado (.000)."
+    },
+    {
+      "id": "cl_diario_ancasti",
+      "name": "Diario El Ancasti",
+      "type": "Empresa / Medios",
+      "services": [
+        "Reparación de Ventiladores de Pie",
+        "Taller"
+      ],
+      "pendingTasks": 1,
+      "pendingBalance": 60000,
+      "notes": "Presupuesto total .000. Adelanto recibido de .000 para repuestos. Saldo restante contra entrega: .000."
+    }
+  ]
+}
